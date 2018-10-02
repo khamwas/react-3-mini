@@ -48,7 +48,7 @@ class App extends Component {
   filterByMake() {
     let make = this.selectedMake.value;
     let findMake= this.state.vehiclesToDisplay.filter(elem=>elem.make===make);
-    
+    this.setState({vehiclesToDisplay:findMake})
 
     // axios (GET)
     // setState with response -> vehiclesToDisplay
